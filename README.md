@@ -1,6 +1,6 @@
 # PokemonGame
 
-you can play the game **[here](https://bgarrido7.github.io/PokemonAdvantages/)**
+:video_game: Play the game **[here](https://bgarrido7.github.io/PokemonAdvantages/)** :exclamation: :bug:
 
 
 ## Readme
