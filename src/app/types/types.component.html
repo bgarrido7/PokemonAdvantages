@@ -1,0 +1,27 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1>
+        Select the Pokemon Type that has an Advantages Against:</h1>
+
+    <div class="board">
+
+        <p class={{poke_type}}>{{poke_type | titlecase}}</p>
+
+        <ul class="options">
+            <li *ngFor="let option of options" class={{option}} (click)="onSelect(option)">
+                {{option | titlecase}}
+            </li>
+        </ul>
+
+    </div>
+
+    <div *ngIf="selectedType">
+        <p class="answer"> {{selectedType | titlecase}} is {{answer}}</p>
+        <p>preparing a new game <i class="fa fa-spinner fa-spin"></i></p>
+    </div>
+
+
+</body>
